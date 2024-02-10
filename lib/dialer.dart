@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 
-void main() => runApp(const Dialer());
 
-class Dialer extends StatelessWidget {
-  const Dialer({Key? key}) : super(key: key);
+
+class dialer_base extends StatelessWidget {
+  const dialer_base({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

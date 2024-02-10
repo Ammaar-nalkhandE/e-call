@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'dialer.dart';
 import 'eco_home.dart';
+import 'get_contacts.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -11,7 +12,7 @@ class HomePage extends StatelessWidget {
        home:  Scaffold(
         backgroundColor: Colors.green,
 
-        body: const Dialer(),
+        body: const dialer_base(),
          bottomNavigationBar: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -22,7 +23,12 @@ class HomePage extends StatelessWidget {
                               MaterialPageRoute(builder: (context) => EcoHome()),
                             );
           }  , child: const Text("Eco"),),
-          TextButton(onPressed: (){}  , child: const Text("Contacts"),),
+          TextButton(onPressed: (){
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Contacts()),
+            );
+          }  , child: const Text("Contacts"),),
           TextButton(onPressed: (){}  , child: const Text("Resents"),),
           ],
         ),

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'home_page.dart';
 
-class EcoHome extends StatelessWidget {
-  const EcoHome({super.key});
 
+class EcoHome extends StatelessWidget {
+   EcoHome({super.key});
+    final double iconsize = 50;
+    final double iconsize_H = 80;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,27 +19,47 @@ class EcoHome extends StatelessWidget {
               children: [
 
 
-                    IconButton(onPressed: (){
+                    SizedBox(
+                      width: iconsize,
+                      height: iconsize_H ,
+                      child: IconButton(onPressed: (){
 
-                    }, icon: Icon(Icons.co_present)),
-                    IconButton(onPressed: (){
+                      }, icon: Image.asset('asset/images/C-footprints.png')),
+                    ),
+                    SizedBox(
+                      width: iconsize,
+                      height: iconsize_H ,
+                      child: IconButton(onPressed: (){
 
-                    }, icon: Icon(Icons.co_present)),
-                    IconButton(onPressed: (){
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => HomePage()),
-                      );
+                      }, icon: Image.asset("asset/images/community.png")),
+                    ),
+                    SizedBox(
+                      width: iconsize,
+                      height: iconsize_H ,
+                      child: IconButton(onPressed: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => HomePage()),
+                        );
 
-                    }, icon: Icon(Icons.dialpad),style: ButtonStyle(),),
-                    IconButton(onPressed: (){
+                      }, icon: Image.asset('asset/images/call.png'),),
+                    ),
+                    SizedBox(
+                      width: iconsize,
+                      height: iconsize_H ,
+                      child: IconButton(onPressed: (){
 
-                    }, icon: Icon(Icons.co_present)),
-                    IconButton(onPressed: (){
+                      }, icon: Image.asset('asset/images/call.png')),
+                    ),
+                    SizedBox(
+                      width: iconsize,
+                      height: iconsize_H ,
+                      child: IconButton(onPressed: (){
 
-                    }, icon: Icon(Icons.co_present)),
+                      }, icon: Image.asset('asset/images/call.png')),
+                    ),
 
-
+//THE ABOVE BUTTONS ARE NOT DISPLAYED CORRECTLY
 
                   ],
 

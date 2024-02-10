@@ -33,11 +33,15 @@ flutter_icons:
 dependencies:
   flutter:
     sdk: flutter
+
   flutter_phone_direct_caller: ^2.1.1
+  flutter_bluetooth_serial_ble: ^0.5.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  flutter_contacts: ^1.1.7+1
+  url_launcher: ^6.2.4
 
 dev_dependencies:
   flutter_test:
@@ -62,9 +66,12 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+assets:
+     - asset/images/C-footprints.png
+     - asset/images/call.png
+     - asset/images/community.png
+     - asset/images/home.png
+     - asset/images/notebook-of-contacts.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
