@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ElevatedButton(
                   onPressed: _removeLastDigit,
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.red, // Change button color here
+                    backgroundColor: Colors.red, // Change button color here
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8.0),
                     ),
@@ -131,7 +131,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ElevatedButton(
                   onPressed: _makeCall,
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.green, // Change button color here
+                    backgroundColor: Colors.green, // Change button color here
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8.0),
                     ),
@@ -155,7 +155,7 @@ class _MyHomePageState extends State<MyHomePage> {
       child: ElevatedButton(
         onPressed: () => _addToNumber(number),
         style: ElevatedButton.styleFrom(
-          primary: Colors.blue, // Change button color here
+          backgroundColor: Colors.blue, // Change button color here
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(8.0),
           ),
