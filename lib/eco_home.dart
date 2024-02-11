@@ -1,5 +1,7 @@
+
 import 'package:flutter/material.dart';
 import 'home_page.dart';
+import 'c_footprints.dart';
 
 
 class EcoHome extends StatelessWidget {
@@ -10,8 +12,9 @@ class EcoHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+
         body: AppBar(
-          title: Text("IN eco homepage"),
+          title: const Text("IN eco homepage"),
         ),
 
           bottomNavigationBar: Row(
@@ -39,7 +42,7 @@ class EcoHome extends StatelessWidget {
                       child: IconButton(onPressed: (){
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => HomePage()),
+                          MaterialPageRoute(builder: (context) => const HomePage()),
                         );
 
                       }, icon: Image.asset('asset/images/call.png'),),
@@ -48,6 +51,10 @@ class EcoHome extends StatelessWidget {
                       width: iconsize,
                       height: iconsize_H ,
                       child: IconButton(onPressed: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) =>  const CFootPrints()),
+                        );
 
                       }, icon: Image.asset('asset/images/call.png')),
                     ),
