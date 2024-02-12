@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'dialer.dart';
 import 'eco_home.dart';
 import 'get_contacts.dart';
+import 'rescent.dart';
 
 
 class HomePage extends StatelessWidget {
@@ -31,7 +32,13 @@ class HomePage extends StatelessWidget {
               MaterialPageRoute(builder: (context) => const Contacts()),
             );
           }  , child: const Text("Contacts"),),
-          TextButton(onPressed: (){}  , child: const Text("Resents"),),
+          TextButton(onPressed: (){
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) =>  CallLogs()),
+            );
+
+          }  , child: const Text("Resents"),),
           ],
         ),
 

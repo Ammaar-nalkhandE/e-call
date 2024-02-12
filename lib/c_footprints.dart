@@ -65,7 +65,7 @@ class _CFootPrintsState extends State<CFootPrints> {
                     ],
                   ),
                 ),
-                const SizedBox(height: 16),
+                const SizedBox(height: 12),
                 Container(
                   height: 100,
                   padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -133,7 +133,7 @@ class _CFootPrintsState extends State<CFootPrints> {
                               fontSize: 16,color:Colors.deepPurple[900]
                           ),
                         ),
-                        const SizedBox(height: 16),
+                        const SizedBox(height: 12),
                         TextField(
                           onChanged: (value) {
                             setState(() {
@@ -148,7 +148,7 @@ class _CFootPrintsState extends State<CFootPrints> {
                             ),
                           ),
                         ),
-                        const SizedBox(height: 16),
+                        const SizedBox(height: 12),
                         Row(
                           children: [
                             const Text('Mileage: '),
@@ -173,7 +173,7 @@ class _CFootPrintsState extends State<CFootPrints> {
                     ),
                   ),
                 ),
-                const SizedBox(height: 16),
+                const SizedBox(height: 12),
                 ElevatedButton(
                   onPressed: () {
                     if (selectedIndex != -1) {
@@ -195,7 +195,7 @@ class _CFootPrintsState extends State<CFootPrints> {
                   child: const Text('Calculate'),
                 ),
 
-                const SizedBox(height: 16),
+                const SizedBox(height: 12),
                 // Circular CO2 Indicator
                 Stack(
                   alignment: Alignment.center,
@@ -227,11 +227,11 @@ class _CFootPrintsState extends State<CFootPrints> {
 
                   ],
                 ),
-                const SizedBox(height: 50), // Increase the height as needed
-                const Text(
-                  'Your Daily Average',
-                  style: TextStyle(fontSize: 16.0, color: Colors.amber),
-                ),
+                // const SizedBox(height: 50), // Increase the height as needed
+                // const Text(
+                //   'Your Daily Average',
+                //   style: TextStyle(fontSize: 16.0, color: Colors.amber),
+                // ),
 
               ],
             ),
