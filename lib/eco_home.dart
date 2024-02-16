@@ -27,14 +27,14 @@ class EcoHome extends StatelessWidget {
                       height: iconsize_H ,
                       child: IconButton(onPressed: (){
 
-                      }, icon: Image.asset('asset/images/C-footprints.png')),
+                      }, icon: Image.asset('assets/images/community.png')),
                     ),
                     SizedBox(
                       width: iconsize,
                       height: iconsize_H ,
                       child: IconButton(onPressed: (){
 
-                      }, icon: Image.asset("asset/images/community.png")),
+                      }, icon: Image.asset("assets/images/home.png")),
                     ),
                     SizedBox(
                       width: iconsize,
@@ -45,7 +45,7 @@ class EcoHome extends StatelessWidget {
                           MaterialPageRoute(builder: (context) => const HomePage()),
                         );
 
-                      }, icon: Image.asset('asset/images/call.png'),),
+                      }, icon: Image.asset('assets/images/call.png'),),
                     ),
                     SizedBox(
                       width: iconsize,
@@ -56,14 +56,14 @@ class EcoHome extends StatelessWidget {
                           MaterialPageRoute(builder: (context) =>  const CFootPrints()),
                         );
 
-                      }, icon: Image.asset('asset/images/call.png')),
+                      }, icon: Image.asset('assets/images/footprint.png')),
                     ),
                     SizedBox(
                       width: iconsize,
                       height: iconsize_H ,
                       child: IconButton(onPressed: (){
 
-                      }, icon: Image.asset('asset/images/call.png')),
+                      }, icon: Image.asset('assets/images/book1.png')),
                     ),
 
 //THE ABOVE BUTTONS ARE NOT DISPLAYED CORRECTLY
