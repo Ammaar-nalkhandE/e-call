@@ -1,5 +1,6 @@
 
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
@@ -7,7 +8,8 @@
     <application
     android:label="final_app"
     android:name="${applicationName}"
-    android:icon="@mipmap/ic_launcher">
+    android:icon="@mipmap/ic_launcher"
+        tools:ignore="ExtraText">
     <activity
         android:name=".MainActivity"
         android:exported="true"
@@ -38,5 +40,6 @@
     <meta-data
         android:name="flutterEmbedding"
         android:value="2" />
+        android:name="io.flutter.app.FlutterApplication"
 </application>
 </manifest>

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 
-class MyHomePage extends StatefulWidget {
+class OxygenCalc extends StatefulWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _OxygenCalcState createState() => _OxygenCalcState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _OxygenCalcState extends State<OxygenCalc> {
   TextEditingController _hoursController = TextEditingController();
   TextEditingController _leafAreaController = TextEditingController();
   double _result = 0.0;
