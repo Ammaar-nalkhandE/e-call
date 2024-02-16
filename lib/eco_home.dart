@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'home_page.dart';
 import 'c_footprints.dart';
+import 'home_body.dart';
 
 
 class EcoHome extends StatelessWidget {
@@ -13,9 +14,7 @@ class EcoHome extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
 
-        body: AppBar(
-          title: const Text("IN eco homepage"),
-        ),
+        body: HomeBody(),
 
           bottomNavigationBar: Row(
               mainAxisAlignment: MainAxisAlignment.center,

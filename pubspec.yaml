@@ -45,6 +45,7 @@ dependencies:
   table_calendar: ^3.1.0
   percent_indicator: ^4.2.3
   call_log: ^4.0.0
+  http: ^1.2.0
 
 dev_dependencies:
   flutter_test:
@@ -75,6 +76,12 @@ flutter:
      - assets/images/community.png
      - assets/images/home.png
      - assets/images/book1.png
+     - assets/gifs/quiz.gif
+     - assets/gifs/time.gif
+     - assets/gifs/cal.gif
+     - assets/gifs/scan.gif
+     - assets/gifs/leaf.gif
+     - assets/gifs/news.gif
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
