@@ -1,4 +1,5 @@
 import 'package:final_app/Barcode.dart';
+import 'package:final_app/temp_loc.dart';
 import 'package:flutter/material.dart';
 import 'env_facts.dart';
 import 'env_news.dart';
@@ -50,17 +51,18 @@ class _HomeBodyState extends State<HomeBody> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    width: 320,
+                    width: 330,
                     height: 130,
                     decoration: BoxDecoration(
                       color: Colors.cyan,
                       borderRadius: BorderRadius.circular(20),
                     ),
                     alignment: Alignment.center,
-                    child: Text(
-                      'Temperature ',
-                      style: TextStyle(fontSize: 16, color: Colors.white),
-                    ),
+                    child: temp_loc(),
+                    // Text(
+                    //   'Temperature ',
+                    //   style: TextStyle(fontSize: 16, color: Colors.white),
+                    // ),
                   ),
                 ],
               ),

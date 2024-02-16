@@ -3,18 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:geolocator/geolocator.dart';
 
-void main() {
-  runApp(const MyApp());
-}
 
-class MyApp extends StatefulWidget {
-  const MyApp({super.key});
+class temp_loc extends StatefulWidget {
+  const temp_loc({super.key});
 
   @override
-  _MyAppState createState() => _MyAppState();
+  _temp_locState createState() => _temp_locState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _temp_locState extends State<temp_loc> {
   String _weatherData = '';
   Position? _currentPosition;
 
@@ -53,7 +50,7 @@ class _MyAppState extends State<MyApp> {
       if (response.statusCode == 200) {
         final weatherData = jsonDecode(response.body);
         setState(() {
-          _weatherData = 'Weather: ${weatherData['weather'][0]['main']}, '
+          _weatherData = 'Weather: ${weatherData['weather'][0]['main']}, \n'
               'Temperature: ${(weatherData['main']['temp'] - 273.15).toStringAsFixed(2)} °C';
         });
       } else {
@@ -66,13 +63,7 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Weather App'),
-        ),
-        body: Center(
-          child: Column(
+    return Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               if (_currentPosition != null)
@@ -82,12 +73,12 @@ class _MyAppState extends State<MyApp> {
               const SizedBox(height: 20),
               Text(
                 _weatherData,
-                style: const TextStyle(fontSize: 18),
+                style: const TextStyle(fontSize: 20,),
               ),
             ],
-          ),
-        ),
-      ),
-    );
+          );
+
+
+
   }
 }
