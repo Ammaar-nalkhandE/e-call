@@ -48,6 +48,9 @@ dependencies:
   http: ^1.2.0
   flutter_barcode_scanner: ^2.0.0
   geolocator: ^11.0.0
+  firebase_core: ^2.25.4
+  firebase_auth: ^4.17.4
+  shared_preferences: ^2.2.2
 
 dev_dependencies:
   flutter_test:
@@ -84,6 +87,66 @@ flutter:
      - assets/gifs/scan.gif
      - assets/gifs/leaf.gif
      - assets/gifs/news.gif
+     - assets/images/april.jpg
+     - assets/images/aug.jpg
+     - assets/images/dec.jpg
+     - assets/images/feb.jpg
+     - assets/images/jan.jpg
+     - assets/images/july.jpg
+     - assets/images/june.jpg
+     - assets/images/march.jpg
+     - assets/images/may.jpg
+     - assets/images/nov.jpg
+     - assets/images/oct.jpg
+     - assets/images/sept.jpg
+     - assets/images/cyc.jpg
+     - assets/images/daffodils.jpg
+     - assets/images/rose.jpg
+     - assets/images/carnation.jpg
+     - assets/images/crocus.jpg
+     - assets/images/DaffodilFlower.jpg
+     - assets/images/snowdrop.jpg
+     - assets/images/tulip.jpg
+     - assets/images/hyacinths.jpg
+     - assets/images/Primrose.jpg
+     - assets/images/tuli.jpg
+     - assets/images/peonies.jpg
+     - assets/images/lilacs.jpg
+     - assets/images/daisy.jpg
+     - assets/images/ireses.jpg
+     - assets/images/Lilies.jpg
+     - assets/images/Rhododendron.jpg
+     - assets/images/Roses.jpg
+     - assets/images/hyrda.jpg
+     - assets/images/gardenias.jpg
+     - assets/images/sun.jpg
+     - assets/images/lily.jpg
+     - assets/images/water lily.jpg
+     - assets/images/delphinium.jpg
+     - assets/images/Lavender.jpg
+     - assets/images/Zinnias.jpg
+     - assets/images/hibiscus.jpg
+     - assets/images/Gladiolus.jpg
+     - assets/images/Dahlias.jpg
+     - assets/images/chrysanthemum.jpg
+     - assets/images/japanese.jpg
+     - assets/images/Red Sedum.jpg
+     - assets/images/(Autumn Crocus).jpg
+     - assets/images/nerines.jpg
+     - assets/images/winter jasmne.jpg
+     - assets/images/Mahonia.jpg
+     - assets/images/holly.jpg
+     - assets/images/mistletoe.jpg
+     - assets/images/Aster.jpg
+     - assets/images/christrose.jpg
+     - assets/images/cy.jpg
+     - assets/images/ChyrsanthemumsLongwood.jpg
+     - assets/images/dahlia.jpg
+     - assets/images/ctr.jpg
+     - assets/images/cyclam (1).jpg
+     - assets/images/ch.jpg
+     - assets/images/stock-phot.jpg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

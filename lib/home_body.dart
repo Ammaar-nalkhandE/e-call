@@ -1,9 +1,11 @@
 import 'package:final_app/Barcode.dart';
+import 'package:final_app/seasonal_cal.dart';
 import 'package:final_app/temp_loc.dart';
 import 'package:flutter/material.dart';
 import 'env_facts.dart';
 import 'env_news.dart';
 import 'o2_calc.dart';
+import 'quiz.dart';
 
 class HomeBody extends StatefulWidget {
   @override
@@ -101,7 +103,25 @@ class _HomeBodyState extends State<HomeBody> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(80),
                     ),
-                    child: IconButton(onPressed:(){} , icon: Image(image: AssetImage("assets/gifs/quiz.gif"))),
+                    child: IconButton(onPressed:(){
+                      showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            title: Text('News'),
+                            content: QuizScreen(), // Display EnvNews widget in the dialog
+                            actions: <Widget>[
+                              ElevatedButton(
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                                child: Text('Close'),
+                              ),
+                            ],
+                          );
+                        },
+                      );
+                    } , icon: Image(image: AssetImage("assets/gifs/quiz.gif"))),
                   ),
                   SizedBox(height: 5),
                   Text(
@@ -147,7 +167,25 @@ class _HomeBodyState extends State<HomeBody> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(80),
                     ),
-                    child:IconButton(onPressed:(){},icon: Image(image: AssetImage("assets/gifs/cal.gif"))),
+                    child:IconButton(onPressed:(){
+                      showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            title: Text('News'),
+                            content: SeaCal(), // Display EnvNews widget in the dialog
+                            actions: <Widget>[
+                              ElevatedButton(
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                                child: Text('Close'),
+                              ),
+                            ],
+                          );
+                        },
+                      );
+                    },icon: Image(image: AssetImage("assets/gifs/cal.gif"))),
                   ),
                   SizedBox(height: 5),
                   Text(
